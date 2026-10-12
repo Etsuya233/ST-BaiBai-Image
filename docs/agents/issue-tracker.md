@@ -1,8 +1,8 @@
 # Issue tracker: GitHub
 
-Issues and specs for this repo live as GitHub issues in **`Etsuya233/ST-BaiBai-Image`** (the `fork` remote). Use the `gh` CLI for all operations, passing `--repo Etsuya233/ST-BaiBai-Image`.
+Issues and specs for this repo live as GitHub issues in **`Etsuya233/ST-BaiBai-Image`** (the `origin` remote, your fork). Use the `gh` CLI for all operations, passing `--repo Etsuya233/ST-BaiBai-Image`.
 
-> This clone also has an upstream remote, `origin` = `baibai-git/ST-BaiBai-Image`, which is **read-only**. Do not target it for issues, labels, or comments; open issues on the fork.
+> This clone also has an `upstream` remote, `baibai-git/ST-BaiBai-Image`, which is **read-only**. Do not target it for issues, labels, or comments; open issues on the fork.
 
 ## Conventions
 
@@ -14,7 +14,7 @@ Issues and specs for this repo live as GitHub issues in **`Etsuya233/ST-BaiBai-I
 - **Apply / remove labels**: `gh issue edit <number> --add-label "..."` / `--remove-label "..."`
 - **Close**: `gh issue close <number> --comment "..."`
 
-Always pass `--repo Etsuya233/ST-BaiBai-Image`. Don't rely on `gh` inferring the repo from `git remote -v`: this clone has two remotes (`fork` and read-only `origin`), so inference is ambiguous.
+Always pass `--repo Etsuya233/ST-BaiBai-Image`. `origin` points at your fork, but the clone also has a read-only `upstream` remote, so be explicit rather than relying on inference.
 
 ## Pull requests as a triage surface
 
